@@ -15,4 +15,10 @@ export class EntriesService {
       .map((res) => res.json());
   }
 
+  createAnEntry(arg) {
+    
+    return this.http.post('http://localhost:3000/api/journal-entries', arg)
+    .map((res) => res.json());
+  }
+
 }

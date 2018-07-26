@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { EntriesFromJournalService } from './entries-from-journal.service';
+import { EntriesService } from './entries-from-journal.service';
 
-describe('EntriesFromJournalService', () => {
+describe('EntriesService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [EntriesFromJournalService]
+      providers: [EntriesService]
     });
   });
 
-  it('should be created', inject([EntriesFromJournalService], (service: EntriesFromJournalService) => {
+  it('should be created', inject([EntriesService], (service: EntriesService) => {
     expect(service).toBeTruthy();
   }));
 });
